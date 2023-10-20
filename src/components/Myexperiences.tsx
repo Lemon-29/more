@@ -9,11 +9,11 @@ interface Props {
     icon: ReactElement;
 }
 
-const Myservices = () => {
+const Myexperiences = () => {
   return (
-    <section id="myservices">
+    <section id="myexperiences">
         <Container className="border border-black mt-10 bg-slate-200 ">
-            <Title title= "My services" />
+            <Title title= "Experience Details" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {
                     servicesDetails.map((item) => (
@@ -32,4 +32,4 @@ const Myservices = () => {
   )
 }
 
-export default Myservices
+export default Myexperiences
