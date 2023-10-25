@@ -1,9 +1,9 @@
 import {Component , Webhook, WebhookIcon , Atom, Framer, ShoppingCart, } from "lucide-react"
 export const navigation = [
     {title:"Home", href: "/" },
-    {title:"Services", href: "#myservices" },
+    {title:"Services", href: "/services" },
     {title:"Portfolio", href: "/portfolio" },
-    {title:"Blog", href: "#myexperiences" },
+    {title:"Blog", href: "/blog" },
     {title:"Resume", href: "/resume.pdf", target: "_blank" },
     {title:"Contact", href: "/contact" },
 ];

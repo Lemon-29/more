@@ -8,7 +8,7 @@ import {  Facebook, Youtube, GitBranch} from "lucide-react"
 
 const Footer = () => {
   return (
-    <div className="bg-zinc-700 text-zinc-300 flex items-center justify-between mt-5">
+    <div className="bg-gray-700 text-zinc-300 flex items-center justify-between mt-10 p-5">
         <Container className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:place-items-center px-4">
         <div>
           <Link href={"/"}>
@@ -17,7 +17,7 @@ const Footer = () => {
           <p className="text-sm mt-2">We are seeking a front-end web developer to build new web pages and improve our company website. The right person for this role will be proficient in HTML, CSS, JavaScript, and PHP. You will be responsible for building and deploying new front-end features to our WordPress website, handling the integration of plugins such as WooCommerce, and performing routine maintenance of our site.</p>
         </div>
 
-        <ul className="flex flex-col items-center justify-center text-sm uppercase gap-5 font-semibol mt-20">
+        <ul className="flex flex-col items-center justify-center text-sm uppercase gap-5 font-semibold mt-20">
           {
             navigation.map((item) => (
               <Link key={item.title} href={item.href}>
@@ -42,9 +42,9 @@ const Footer = () => {
           }
           
         </ul>
-        <div className="">
+        <div>
           <p  className="text-3xl font-semibold text-violet-300 flex justify-center">Reach Me With</p>
-          <ul className="flex justify-center flex-row gap-5 ">
+          <ul className="flex justify-center flex-row gap-5 mt-4 ">
             <a href="https://www.facebook.com/profile.php?id=100015109629183&mibextid=ZbWKwL" target="blank"><li className="w-10 h-10 bg-slate-400 text-blue-500 rounded-full flex items-center justify-center hover:bg-black hover:text-white duration-200"> 
               <Facebook /> 
             </li></a>
