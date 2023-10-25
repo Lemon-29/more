@@ -5,7 +5,7 @@ import { servicesDetails } from "@/constants/data";
 const PortfolioPage = () => {
   return (
     <Container className="border border-black mt-10 bg-slate-500 ">
-            <Title title= "Experience Details" />
+            <Title title= "Portfolio Details" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {
                     servicesDetails.map((item) => (

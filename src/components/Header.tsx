@@ -5,12 +5,13 @@ import Link from "next/link"
 import { navigation } from "@/constants/data"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 
 
 const Header = () => {
   const [show, setShow] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
   
 
   return (
@@ -37,11 +38,15 @@ const Header = () => {
           show && <ul className="absolute right-0 px-10 py-6 top-20 z-10 bg-zinc-500 flex flex-col items-start text-sm uppercase gap-5 font-semibold text-zinc-700">
           {
             navigation.map((item) => (
-              <Link key={item.title} href={item.href}>
-          <li className="hover:text-gray-300 cursor-pointer duration-300 relative group overflow-hidden text-gray-900">{item.title}
+
+          <li 
+          key={item.title}
+          onClick={()=>{router.push(item.href), setShow(false);
+          }}
+          
+          className="hover:text-gray-300 cursor-pointer duration-300 relative group overflow-hidden text-gray-900">{item.title}
           <span  className="h-[1px] w-full bg-black inline-flex absolute left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"/>
           </li>
-          </Link>
             ))
           }
           
